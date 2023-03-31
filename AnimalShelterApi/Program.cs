@@ -55,6 +55,12 @@ else
   app.UseHttpsRedirection();
 }
 
+
+app.UseRequestLocalization(options);
+app.UseStaticFiles();
+app.UseMiddleware<LocalizerMiddleware>();
+
+app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
