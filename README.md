@@ -1,8 +1,8 @@
-# Pierre's Sweet And Savory Treats
+# Animal Shelter API
 
 #### By: Jannon Sielaff
 
-An application with user authentication and a many-to-many database relationship.
+An functional API connected to an ef core database.
 
 ## Technologies Used
 
@@ -12,6 +12,7 @@ An application with user authentication and a many-to-many database relationship
 * SQL
 * Swagger
 * Postman
+* EF Core
 
 ## Setup Instructions
 
@@ -23,7 +24,7 @@ An application with user authentication and a many-to-many database relationship
   "ConnectionStrings": {
     "DefaultConnection": "Server=localhost;Port=3306;database=[your database name];uid=[your user ID];pwd=[Your password];"
   }
-}
+} 
 
 4. In the command line, run the command "dotnet build" to compile the code. After you have compiled the code and injected all of your dependencies, you can publish the application to the internet by typing dotnet watch run.  This will allow you to query the database using an application such as Postman. There are a variety of Endpoints and Routing Methods that you can use to engage with the Api/Database.  They are as follows:
 
