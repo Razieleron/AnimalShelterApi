@@ -31,9 +31,12 @@ https://localhost:5001/api/animals -
 
   The following Endpoint supports both Get and Post methods
     
-    Get will return all animals in the database
+    A Get Request to the above url will return all animals in the database
+        There are ways to modify the Get Request through the following methods:  species, string, and minimumAge:
+          You can edit the url to narrow your search down.  For example, if you only want to see Dogs that are over 2 years of age, the Get Request endpoint url would look something like:
+              https://localhost:5001/api/animals?minimumAge=10&species=dog
     
-    Post will add an animal to the database
+    A Post Request to the above url will add an animal to the database
       
         The body of the post request should look like this: 
             {
@@ -41,10 +44,19 @@ https://localhost:5001/api/animals -
               "species": "animalspecies",
               "age": "animalage"
             }
+          ** NOTE: do not add an "animalId" parameter to the body of your post request, and this parameter is automatically generated based on the Database's Settings
+
+
 
   https://localhost:5001/api/animals/{id}
 
-    The following Endpoint supports Get, Post, and Put Methods
+    The following Endpoint supports Get, Put, and Delete Methods.  In your own url, instead of {id}, enter the number that corresponds to the animalId of the animal you wish to edit.
+
+      A Get Request to that url will return the animalId, name, species, and age of the animal
+      
+      A Post Request will allow you to update/edit any of the information in the animal object.
+
+      A Delete Request will allow you to delete an animal from the database
 
 
 
