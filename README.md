@@ -7,18 +7,17 @@ An application with user authentication and a many-to-many database relationship
 ## Technologies Used
 
 * C#
-* HTML
-* CSS
 * Visual Studio
 * .Net Framework
-* Razor Markup
 * SQL
+* Swagger
+* Postman
 
 ## Setup Instructions
 
 1. Clone this repository.
-2. Open your terminal (e.g., Terminal or GitBash) and navigate to this project's production directory called "PierresTreats.Solution/PierresTreats".
-3. Create a file in /PierresTreats called appsettings.json.  In this file, place the following text:
+2. Open your terminal (e.g., Terminal or GitBash) and navigate to this project's production directory called "AnimalShelterApi.Solution/AnimalShelterApi".
+3. Create a file in /AnimalShelterApi called appsettings.json.  In this file, place the following text:
 
 {
   "ConnectionStrings": {
@@ -26,7 +25,9 @@ An application with user authentication and a many-to-many database relationship
   }
 }
 
-4. In the command line, run the command "dotnet build" to compile the code. After you have compiled the code and injected all of your dependencies, you can publish the application to the internet by typing dotnet watch run.  This will open a web browser to LocalHost:5000 or Localhost:5001.  From here you can interact with the application. Since this is a web application, you will interact with it in your web browser.
+4. In the command line, run the command "dotnet build" to compile the code. After you have compiled the code and injected all of your dependencies, you can publish the application to the internet by typing dotnet watch run.  This will allow you to query the database using an application such as Postman. There are a variety of Endpoints and Routing Methods that you can use to engage with the Api/Database.  They are as follows:
+
+
 
 
 ## Known Bugs
