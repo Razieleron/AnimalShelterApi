@@ -27,6 +27,24 @@ An application with user authentication and a many-to-many database relationship
 
 4. In the command line, run the command "dotnet build" to compile the code. After you have compiled the code and injected all of your dependencies, you can publish the application to the internet by typing dotnet watch run.  This will allow you to query the database using an application such as Postman. There are a variety of Endpoints and Routing Methods that you can use to engage with the Api/Database.  They are as follows:
 
+https://localhost:5001/api/animals - 
+
+  The following Endpoint supports both Get and Post methods
+    
+    Get will return all animals in the database
+    
+    Post will add an animal to the database
+      
+        The body of the post request should look like this: 
+            {
+              "name": "animalname",
+              "species": "animalspecies",
+              "age": "animalage"
+            }
+
+  https://localhost:5001/api/animals/{id}
+
+    The following Endpoint supports Get, Post, and Put Methods
 
 
 
