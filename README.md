@@ -28,14 +28,14 @@ An functional API connected to an ef core database.
 
 4. In the command line, run the command "dotnet build" to compile the code. After you have compiled the code and injected all of your dependencies, you can publish the application to the internet by typing dotnet watch run.  This will allow you to query the database using an application such as Postman. There are a variety of Endpoints and Routing Methods that you can use to engage with the Api/Database.  They are as follows:
 
-https://localhost:5001/api/animals - 
+https://localhost:5001/api/v1/animals - 
 
   The above Endpoint supports both Get and Post methods
     
     A Get Request to the above url will return all animals in the database
         There are ways to modify the Get Request through the following methods:  species, string, and minimumAge:
           You can edit the url to narrow your search down.  For example, if you only want to see Dogs that are over 2 years of age, the Get Request endpoint url would look something like:
-              https://localhost:5001/api/animals?minimumAge=10&species=dog
+              https://localhost:5001/api/v1/animals?minimumAge=10&species=dog
     
     A Post Request to the above url will add an animal to the database
       
@@ -49,7 +49,7 @@ https://localhost:5001/api/animals -
 
 
 
-  https://localhost:5001/api/animals/{id}
+  https://localhost:5001/api/v1/animals/{id}
 
     The above Endpoint supports Get, Put, and Delete Methods.  In your own url, instead of {id}, enter the number that corresponds to the animalId of the animal you wish to edit.
 
