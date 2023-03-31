@@ -21,7 +21,7 @@ namespace AnimalShelterApi.Controllers
     {
       IQueryable<Animal> query = _db.Animals.AsQueryable();
 
-      if (species != null)
+      if (species != null) 
       {
         query = query.Where(entry => entry.Species == species);
       }
