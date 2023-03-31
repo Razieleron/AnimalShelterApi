@@ -16,7 +16,7 @@ namespace AnimalShelterApi.Controllers
     }
 
     // GET api/animals
-    [HttpGet]
+    [HttpGet] 
     public async Task<List<Animal>> Get(string species, string name, int minimumAge)
     {
       IQueryable<Animal> query = _db.Animals.AsQueryable();
