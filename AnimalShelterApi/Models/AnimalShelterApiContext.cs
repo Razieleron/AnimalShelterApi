@@ -1,16 +1,16 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace CretaceousApi.Models
+namespace AnimalShelterApi.Models
 {
-  public class CretaceousApiContext : DbContext
+  public class AnimalShelterApiContext : DbContext
   {
     public DbSet<Animal> Animals { get; set; }
 
-    public CretaceousApiContext(DbContextOptions<CretaceousApiContext> options) : base(options)
+    public AnimalShelterApiContext(DbContextOptions<AnimalShelterApiContext> options) : base(options)
     {
     }
 
-    protected override void OnModelCreating(ModelBuilder builder)
+    protected override void OnModelCreating(ModelBuilder builder) 
     {
       builder.Entity<Animal>()
         .HasData(
