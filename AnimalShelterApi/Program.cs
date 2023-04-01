@@ -1,3 +1,6 @@
+using System;
+using System.IO;
+using System.Security.AccessControl;
 using AnimalShelterApi.Models;
 using Microsoft.AspNetCore.Mvc.Versioning;
 using Microsoft.EntityFrameworkCore;
@@ -6,6 +9,9 @@ using Microsoft.AspNetCore.Mvc.ApiExplorer;
 using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
+using System.Globalization;
+using Microsoft.AspNetCore.Localization;
+using Microsoft.Extensions.Options;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -74,9 +80,9 @@ else
 }
 
 
-app.UseRequestLocalization(options);
+// app.UseRequestLocalization(options);
 app.UseStaticFiles();
-app.UseMiddleware<LocalizerMiddleware>();
+// app.UseMiddleware<LocalizerMiddleware>();
 
 app.UseHttpsRedirection();
 app.UseAuthorization();
