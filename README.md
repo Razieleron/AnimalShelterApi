@@ -2,7 +2,7 @@
 
 #### By: Jannon Sielaff
 
-An functional API connected to an ef core database.
+A functional API connected to an EF core database.
 
 ## Technologies Used
 
@@ -30,7 +30,7 @@ An functional API connected to an ef core database.
 
 https://localhost:5001/api/v1/animals - 
 
-  The above Endpoint supports both Get and Post methods
+  The above Endpoint supports both Get and Post methods.
     
     A Get Request to the above url will return all animals in the database
     There are ways to modify the Get Request through the following methods:  species, string, and minimumAge:
