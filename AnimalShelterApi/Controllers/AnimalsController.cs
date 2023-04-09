@@ -29,7 +29,7 @@ namespace AnimalShelterApi.Controllers
       }
 
       if (name != null)
-      {
+      { 
         query = query.Where(entry => entry.Name == name);
       }
 
