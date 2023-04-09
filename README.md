@@ -33,10 +33,13 @@ https://localhost:5001/api/v1/animals -
   The above Endpoint supports both Get and Post methods
     
     A Get Request to the above url will return all animals in the database
-        There are ways to modify the Get Request through the following methods:  species, string, and minimumAge:
-          You can edit the url to narrow your search down.  For example, if you only want to see Dogs that are over 2 years of age, the Get Request endpoint url would look something like:
-              https://localhost:5001/api/v1/animals?minimumAge=10&species=dog
+    There are ways to modify the Get Request through the following methods:  species, string, and minimumAge:
     
+    You can edit the url to narrow your search down.  For example, if you only want to see Dogs 
+    that are over 2 years of age, the Get Request endpoint url would look something like:
+    
+    https://localhost:5001/api/v1/animals?minimumAge=10&species=dog
+
     A Post Request to the above url will add an animal to the database
       
         The body of the post request should look like this: 
@@ -45,31 +48,33 @@ https://localhost:5001/api/v1/animals -
               "species": "animalspecies",
               "age": "animalage"
             }
-          ** NOTE: do not add an "animalId" parameter to the body of your post request, and this parameter is automatically generated based on the Database's Settings
+          ** NOTE: do not add an "animalId" parameter to the body of your post request, 
+          and this parameter is automatically generated based on the Database's Settings
 
 
 
-  https://localhost:5001/api/v1/animals/{id}
+https://localhost:5001/api/v1/animals/{id}
 
-    The above Endpoint supports Get, Put, and Delete Methods.  In your own url, instead of {id}, enter the number that corresponds to the animalId of the animal you wish to edit.
+  The above Endpoint supports Get, Put, and Delete Methods.  In your own url, instead of {id}, enter the number that corresponds to the animalId of the animal you wish to edit.
 
-      A Get Request to that url will return the animalId, name, species, and age of the animal
-      
-      A Put Request will allow you to update/edit any of the information in the animal object.  Please note that according to the HTTP specification, a PUT request requires the client to send the entire updated entity, not just the changes.  So if you wanted to change just the name of the Animal, you would need to include the animalId, the species and the age in the body
+    A Get Request to that url will return the animalId, name, species, and age of the animal
+    
+    A Put Request will allow you to update/edit any of the information in the animal object.  Please note that according to the HTTP specification, a PUT request requires the client to send the entire updated entity, not just the changes.  So if you wanted to change just the name of the Animal, you would need to include the animalId, the species and the age in the body
 
-        The body of the Put request should look like this:
-            {
-              "animalId": "animalId",
-              "name": "animalname",
-              "species": "animalspecies",
-              "age": "animalage"
-            }
+      The body of the Put request should look like this:
+          {
+            "animalId": "animalId",
+            "name": "animalname",
+            "species": "animalspecies",
+            "age": "animalage"
+          }
 
-      A Delete Request to that URL will allow you to delete the animal with that animalId from the database.  
-      
-      ***NOTE***
-        SENDING A DELETE REQUEST TO THE ENDPOINT WILL DELETE THE ANIMAL THAT HAS THE animalId THAT IS INDICATED IN THE URL.  PLEASE BE CAREFUL WHEN DELETING DATABASE ENTRIES.
-      ***/NOTE***
+    A Delete Request to that URL will allow you to delete the animal with that animalId from the database.  
+    
+    ***NOTE***
+      SENDING A DELETE REQUEST TO THE ENDPOINT WILL DELETE THE ANIMAL THAT HAS THE animalId THAT 
+      IS INDICATED IN THE URL.  PLEASE BE CAREFUL WHEN DELETING DATABASE ENTRIES.
+    ***/NOTE***
 
 
 
