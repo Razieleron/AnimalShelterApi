@@ -59,7 +59,10 @@ https://localhost:5001/api/v1/animals/{id}
 
     A Get Request to that url will return the animalId, name, species, and age of the animal
     
-    A Put Request will allow you to update/edit any of the information in the animal object.  Please note that according to the HTTP specification, a PUT request requires the client to send the entire updated entity, not just the changes.  So if you wanted to change just the name of the Animal, you would need to include the animalId, the species and the age in the body
+    A Put Request will allow you to update/edit any of the information in the animal object.  Please note that 
+    according to the HTTP specification, a PUT request requires the client to send the entire updated entity, 
+    not just the changes.  So if you wanted to change just the name of the Animal, you would need to include 
+    the animalId, the species and the age in the body.
 
       The body of the Put request should look like this:
           {

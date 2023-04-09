@@ -49,7 +49,7 @@ builder.Services.AddVersionedApiExplorer(setup =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.ConfigureOptions<ConfigureSwaggerOptions>();
+builder.Services.ConfigureOptions<ConfigureSwaggerOptions>(); 
 
 
 
